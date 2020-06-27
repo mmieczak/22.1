@@ -14,7 +14,7 @@
         <h2>User form</h2>
     </div>
 
-    <form method="POST" action="/add" novalidate>
+    <form method="POST" action="/submit" novalidate>
         <div class="form-group">
             <label for="firstName">First name</label>
             <input type="text" class="form-control" name="name" id="firstName" placeholder="First name" required>
@@ -36,10 +36,10 @@
                 Please type your age
             </div>
         </div>
-
-        <button class="btn btn-primary" type="submit">Add</button>
+        <button class="btn btn-primary" type="submit" name="add" value="add">Add</button>
+        <button class="btn btn-primary" type="submit" name="search" value="search">Search</button>
+        <button class="btn btn-primary" type="submit" name="remove" value="remove">Remove</button>
     </form>
-
     <br/>
     <a href="/users" >Show List</a>
 <!--    Walidacja wypelnienia pol na poziomie frontendu
